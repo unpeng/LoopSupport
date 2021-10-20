@@ -16,10 +16,8 @@ public final class LoopSupportUI: SupportUI {
     public static var supportIdentifier: String = "LoopSupportUI"
     
     public func checkVersion(bundleIdentifier: String, currentVersion: String, completion: @escaping (Result<VersionUpdate?, Error>) -> Void) { }
-    
-    public func setAlertIssuer(alertIssuer: AlertIssuer?) { }
-    
-    public func softwareUpdateView(guidanceColors: GuidanceColors, bundleIdentifier: String, currentVersion: String, openAppStoreHook: (() -> Void)?) -> AnyView? { nil }
+        
+    public func softwareUpdateView(bundleIdentifier: String, currentVersion: String, guidanceColors: GuidanceColors, openAppStore: (() -> Void)?) -> AnyView? { nil }
     
     public init?(rawState: RawStateValue) {
         self.rawState = rawState
@@ -37,4 +35,6 @@ public final class LoopSupportUI: SupportUI {
             urlHandler(url)
         }))
     }
+    
+    public weak var delegate: SupportUIDelegate?
 }
