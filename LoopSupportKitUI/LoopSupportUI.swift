@@ -8,13 +8,26 @@
 
 import Foundation
 import SwiftUI
+import LoopKit
 import LoopKitUI
 import LoopSupportKit
 
 public final class LoopSupportUI: SupportUI {
-    public let supportIdentifier = "LoopSupport"
-
-    public init() {}
+    public static var supportIdentifier: String = "LoopSupportUI"
+    
+    public func checkVersion(bundleIdentifier: String, currentVersion: String, completion: @escaping (Result<VersionUpdate?, Error>) -> Void) { }
+        
+    public func softwareUpdateView(bundleIdentifier: String, currentVersion: String, guidanceColors: GuidanceColors, openAppStore: (() -> Void)?) -> AnyView? { nil }
+    
+    public init?(rawState: RawStateValue) {
+        self.rawState = rawState
+    }
+    
+    public var rawState: RawStateValue
+    
+    public init() {
+        rawState = [:]
+    }
 
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
         return AnyView(Button("Submit Bug Report", action: {
@@ -22,4 +35,6 @@ public final class LoopSupportUI: SupportUI {
             urlHandler(url)
         }))
     }
+    
+    public weak var delegate: SupportUIDelegate?
 }
