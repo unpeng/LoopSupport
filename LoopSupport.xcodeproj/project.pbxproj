@@ -3,22 +3,8 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		A9CE7F5625BCA63400C04F9B /* Cartfile */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A9CE7F5725BCA63400C04F9B /* Build configuration list for PBXAggregateTarget "Cartfile" */;
-			buildPhases = (
-				A9CE7F9D25BCA82E00C04F9B /* Carthage Bootstrap */,
-			);
-			dependencies = (
-			);
-			name = Cartfile;
-			productName = Cartfile;
-		};
-/* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		A936A93F25BC9A0C0085119C /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; };
@@ -42,6 +28,10 @@
 		A9CE800B25BCACAE00C04F9B /* LoopSupportPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE800A25BCACAE00C04F9B /* LoopSupportPlugin.swift */; };
 		A9CE801325BCAE4000C04F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE801225BCAE4000C04F9B /* Assets.xcassets */; };
 		A9CE803625BCAFAB00C04F9B /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; };
+		C127A12B2890699300484ED6 /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; platformFilter = ios; };
+		C127A12C2890699300484ED6 /* LoopSupportKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C127A12F2890699300484ED6 /* LoopSupportKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; platformFilter = ios; };
+		C127A1302890699300484ED6 /* LoopSupportKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +70,36 @@
 			remoteGlobalIDString = A936A93525BC9A0B0085119C;
 			remoteInfo = LoopSupportKit;
 		};
+		C127A12D2890699300484ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A936A90525BC99CB0085119C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A936A93525BC9A0B0085119C;
+			remoteInfo = LoopSupportKit;
+		};
+		C127A1312890699300484ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A936A90525BC99CB0085119C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A936A95325BC9A190085119C;
+			remoteInfo = LoopSupportKitUI;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C127A1332890699300484ED6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C127A12C2890699300484ED6 /* LoopSupportKit.framework in Embed Frameworks */,
+				C127A1302890699300484ED6 /* LoopSupportKitUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A936A93625BC9A0B0085119C /* LoopSupportKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopSupportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C127A12B2890699300484ED6 /* LoopSupportKit.framework in Frameworks */,
+				C127A12F2890699300484ED6 /* LoopSupportKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +335,6 @@
 				A936A93A25BC9A0C0085119C /* Sources */,
 				A936A93B25BC9A0C0085119C /* Frameworks */,
 				A936A93C25BC9A0C0085119C /* Resources */,
-				A9B3CDFD25BCB754002D9E92 /* Copy Frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -352,7 +372,6 @@
 				A936A95825BC9A190085119C /* Sources */,
 				A936A95925BC9A190085119C /* Frameworks */,
 				A936A95A25BC9A190085119C /* Resources */,
-				A9B3CE0425BCB7AB002D9E92 /* Copy Frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -372,13 +391,15 @@
 				A936A97025BC9A230085119C /* Sources */,
 				A936A97125BC9A230085119C /* Frameworks */,
 				A936A97225BC9A230085119C /* Resources */,
-				A9B3CE0925BCB7E0002D9E92 /* Copy Frameworks with Carthage */,
+				C127A1332890699300484ED6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A9B3CE0625BCB7D8002D9E92 /* PBXTargetDependency */,
 				A9B3CE0825BCB7D8002D9E92 /* PBXTargetDependency */,
+				C127A12E2890699300484ED6 /* PBXTargetDependency */,
+				C127A1322890699300484ED6 /* PBXTargetDependency */,
 			);
 			name = LoopSupportPlugin;
 			productName = LoopSupportPlugin;
@@ -410,9 +431,6 @@
 					A936A97325BC9A230085119C = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					A9CE7F5625BCA63400C04F9B = {
-						CreatedOnToolsVersion = 12.2;
-					};
 				};
 			};
 			buildConfigurationList = A936A90825BC99CB0085119C /* Build configuration list for PBXProject "LoopSupport" */;
@@ -442,7 +460,6 @@
 				A936A95325BC9A190085119C /* LoopSupportKitUI */,
 				A936A95B25BC9A190085119C /* LoopSupportKitUITests */,
 				A936A97325BC9A230085119C /* LoopSupportPlugin */,
-				A9CE7F5625BCA63400C04F9B /* Cartfile */,
 			);
 		};
 /* End PBXProject section */
@@ -485,89 +502,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A9B3CDFD25BCB754002D9E92 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
-		A9B3CE0425BCB7AB002D9E92 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/LoopKitUI.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKitUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
-		A9B3CE0925BCB7E0002D9E92 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopSupportKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/LoopSupportKitUI.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Scripts/copy-frameworks.sh\n";
-		};
-		A9CE7F9D25BCA82E00C04F9B /* Carthage Bootstrap */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Carthage Bootstrap";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"Bootstrapping Carthage dependencies...\"\nunset LLVM_TARGET_TRIPLE_SUFFIX\n\nif ! cmp -s Cartfile.Resolved Carthage/Cartfile.resolved; then\n    time ./Scripts/carthage.sh bootstrap --project-directory \"$SRCROOT\" --platform ios --cache-builds --verbose\n    cp Cartfile.resolved Carthage\nelse\n    echo \"Carthage: not bootstrapping\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A936A93225BC9A0B0085119C /* Sources */ = {
@@ -640,6 +574,18 @@
 			isa = PBXTargetDependency;
 			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
 			targetProxy = A9CE803825BCAFAB00C04F9B /* PBXContainerItemProxy */;
+		};
+		C127A12E2890699300484ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
+			targetProxy = C127A12D2890699300484ED6 /* PBXContainerItemProxy */;
+		};
+		C127A1322890699300484ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A936A95325BC9A190085119C /* LoopSupportKitUI */;
+			targetProxy = C127A1312890699300484ED6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1096,20 +1042,6 @@
 			};
 			name = Release;
 		};
-		A9CE7F5825BCA63400C04F9B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A9CE7F5925BCA63400C04F9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1163,15 +1095,6 @@
 			buildConfigurations = (
 				A936A97A25BC9A230085119C /* Debug */,
 				A936A97B25BC9A230085119C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9CE7F5725BCA63400C04F9B /* Build configuration list for PBXAggregateTarget "Cartfile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9CE7F5825BCA63400C04F9B /* Debug */,
-				A9CE7F5925BCA63400C04F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
