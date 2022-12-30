@@ -66,6 +66,11 @@ public class LoopKitAnalytics {
         }
     }
 
+    public func recordIdentify(_ property: String, value: String) {
+        if usageDataPrivacyPreference == .shareUsageDetailsWithDevelopers {
+            client?.identify(AMPIdentify().set(property, value: value as NSString))
+        }
+    }
 }
 
 extension UserDefaults {
