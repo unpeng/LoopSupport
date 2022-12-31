@@ -20,7 +20,7 @@ public class LoopKitAnalytics {
 
     private var client: Amplitude?
 
-    public private(set) var usageDataPrivacyPreference: UsageDataPrivacyPreference {
+    public private(set) var usageDataPrivacyPreference: UsageDataPrivacyPreference? {
         get {
             return UserDefaults.standard.usageDataPrivacyPreference
         }
@@ -50,7 +50,7 @@ public class LoopKitAnalytics {
     }
 
     private func createClient() {
-        guard usageDataPrivacyPreference != .noSharing else {
+        guard let usageDataPrivacyPreference = usageDataPrivacyPreference, usageDataPrivacyPreference != .noSharing else {
             return
         }
         let amplitude = Amplitude()
@@ -80,18 +80,18 @@ extension UserDefaults {
     }
 
     // Information for the extension from Loop
-    var usageDataPrivacyPreference: UsageDataPrivacyPreference {
+    var usageDataPrivacyPreference: UsageDataPrivacyPreference? {
         get {
             if let rawValue = string(forKey: Key.UsageDataPrivacyPreference.rawValue),
                let preference = UsageDataPrivacyPreference(rawValue: rawValue)
             {
                 return preference
             } else {
-                return .shareInstallationStatsOnly
+                return nil
             }
         }
         set {
-            set(newValue.rawValue, forKey: Key.UsageDataPrivacyPreference.rawValue)
+            set(newValue?.rawValue, forKey: Key.UsageDataPrivacyPreference.rawValue)
         }
     }
 }

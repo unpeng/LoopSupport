@@ -12,13 +12,15 @@ public struct UsageDataPrivacyPreferenceView: View {
     var onboardingMode: Bool
 
     var didChoosePreference: ((UsageDataPrivacyPreference) -> Void)?
+    var didFinish: (() -> Void)?
 
     @State private var preference: UsageDataPrivacyPreference
 
-    public init(preference: UsageDataPrivacyPreference, onboardingMode: Bool, didChoosePreference: ((UsageDataPrivacyPreference) -> Void)? = nil) {
+    public init(preference: UsageDataPrivacyPreference, onboardingMode: Bool, didChoosePreference: ((UsageDataPrivacyPreference) -> Void)? = nil, didFinish: (() -> Void)?) {
         self.preference = preference
         self.onboardingMode = onboardingMode
         self.didChoosePreference = didChoosePreference
+        self.didFinish = didFinish
     }
 
     private func choice(title: String, description: String, sharingPreference: UsageDataPrivacyPreference) -> CheckmarkListItem {
@@ -49,7 +51,7 @@ public struct UsageDataPrivacyPreferenceView: View {
             if onboardingMode {
                 Spacer()
                 Button(action: {
-                    self.didChoosePreference?(preference)
+                    self.didFinish?()
                 }) {
                     Text(LocalizedString("Continue", comment:"Button title for choosing onboarding without nightscout"))
                         .actionButtonStyle(.primary)
@@ -76,9 +78,7 @@ public struct UsageDataPrivacyPreferenceView: View {
             }
         }
         .onChange(of: preference) { newValue in
-            if !onboardingMode {
-                didChoosePreference?(newValue)
-            }
+            didChoosePreference?(newValue)
         }
     }
 }

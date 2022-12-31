@@ -32,11 +32,7 @@ public final class LoopSupportUI: SupportUI {
     }
 
     public func configurationMenuItems() -> [AnyView] {
-        return [AnyView(NavigationLink("Usage Data Sharing") {
-            UsageDataPrivacyPreferenceView(preference: analytics.usageDataPrivacyPreference, onboardingMode: false) { newValue in
-                self.analytics.updateUsageDataPrivacyPreference(newValue: newValue)
-            }
-        })]
+        return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
     }
 
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
