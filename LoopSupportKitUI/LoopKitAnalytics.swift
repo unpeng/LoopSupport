@@ -54,7 +54,7 @@ public class LoopKitAnalytics {
             return
         }
         let amplitude = Amplitude()
-        amplitude.setTrackingOptions(AMPTrackingOptions().disableCity().disableCarrier().disableIDFA().disableLatLng())
+        amplitude.setTrackingOptions(AMPTrackingOptions().disableCity().disableCarrier().disableIDFA().disableLatLng().disableIPAddress().disableRegion())
         amplitude.initializeApiKey("7dd7414785560c0dd1ef802ac10c00b4")
         client = amplitude
         client?.logEvent("LoopKitAnalytics instantiation")
