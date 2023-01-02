@@ -50,6 +50,9 @@ public class LoopKitAnalytics {
     }
 
     private func createClient() {
+#if targetEnvironment(simulator)
+        return
+#else
         guard let usageDataPrivacyPreference = usageDataPrivacyPreference, usageDataPrivacyPreference != .noSharing else {
             return
         }
@@ -58,6 +61,7 @@ public class LoopKitAnalytics {
         amplitude.initializeApiKey("7dd7414785560c0dd1ef802ac10c00b4")
         client = amplitude
         client?.logEvent("LoopKitAnalytics instantiation")
+#endif
     }
 
     public func recordAnalyticsEvent(_ name: String, withProperties properties: [AnyHashable : Any]?, outOfSession: Bool) {
