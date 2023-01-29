@@ -33,7 +33,7 @@ public struct UsageDataPrivacyPreferenceMenuItem: View {
     }
 
     public var body: some View {
-        NavigationLink("Usage Data Sharing", destination: destination)
+        NavigationLink(LocalizedString("Usage Data Sharing", comment: "Navigation Link Title for Usage Data Sharing"), destination: destination)
     }
 }
 

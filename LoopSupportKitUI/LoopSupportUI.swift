@@ -36,7 +36,7 @@ public final class LoopSupportUI: SupportUI {
     }
 
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
-        return AnyView(Button("Submit Bug Report", action: {
+        return AnyView(Button(LocalizedString("Submit Bug Report", comment: "Navigation link title for Submit Bug Report"), action: {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
             urlHandler(url)
         }))
