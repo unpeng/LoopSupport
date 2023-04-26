@@ -22,12 +22,20 @@ public final class LoopSupportUI: SupportUI {
     public init?(rawState: RawStateValue) {
         self.rawState = rawState
     }
+
+    public var loopNeedsReset: Bool = false
     
     public var rawState: RawStateValue
+    
+    public var studyProductSelection: String? = nil
     
     public init() {
         rawState = [:]
     }
+    
+    public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
+    
+    public func resetLoop() {}
 
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
         return AnyView(Button("Submit Bug Report", action: {
