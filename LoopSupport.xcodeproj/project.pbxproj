@@ -7,41 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A936A93F25BC9A0C0085119C /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; };
-		A936A94625BC9A0C0085119C /* LoopSupportKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A936A93825BC9A0B0085119C /* LoopSupportKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A936A95D25BC9A190085119C /* LoopSupportKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; };
 		A936A96425BC9A190085119C /* LoopSupportKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A936A95625BC9A190085119C /* LoopSupportKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A936A97825BC9A230085119C /* LoopSupportPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A936A97625BC9A230085119C /* LoopSupportPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9B3CDD625BCB4B1002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDD525BCB4B1002D9E92 /* LoopKit.framework */; };
 		A9B3CDE125BCB4DE002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDDF25BCB4DE002D9E92 /* LoopKit.framework */; };
 		A9B3CDE325BCB4DE002D9E92 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDE025BCB4DE002D9E92 /* LoopKitUI.framework */; };
-		A9B3CDFF25BCB77A002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDFE25BCB77A002D9E92 /* LoopKit.framework */; };
 		A9B3CE0125BCB7A1002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CE0025BCB7A1002D9E92 /* LoopKit.framework */; };
 		A9B3CE0325BCB7A1002D9E92 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CE0225BCB7A1002D9E92 /* LoopKitUI.framework */; };
-		A9CE7D7E25BC9B3300C04F9B /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D7D25BC9B3300C04F9B /* LocalizedString.swift */; };
 		A9CE7D8425BC9B3700C04F9B /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D7D25BC9B3300C04F9B /* LocalizedString.swift */; };
 		A9CE7D8A25BC9B3700C04F9B /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D7D25BC9B3300C04F9B /* LocalizedString.swift */; };
-		A9CE7DA025BC9C0200C04F9B /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D9F25BC9C0200C04F9B /* OSLog.swift */; };
 		A9CE7DA125BC9C0200C04F9B /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D9F25BC9C0200C04F9B /* OSLog.swift */; };
 		A9CE7DA225BC9C0200C04F9B /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D9F25BC9C0200C04F9B /* OSLog.swift */; };
 		A9CE800325BCAC8700C04F9B /* LoopSupportUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE800225BCAC8700C04F9B /* LoopSupportUI.swift */; };
 		A9CE800B25BCACAE00C04F9B /* LoopSupportPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE800A25BCACAE00C04F9B /* LoopSupportPlugin.swift */; };
 		A9CE801325BCAE4000C04F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE801225BCAE4000C04F9B /* Assets.xcassets */; };
-		A9CE803625BCAFAB00C04F9B /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; };
-		C12ECD01289560B90089EB07 /* LoopSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; platformFilter = ios; };
-		C12ECD02289560B90089EB07 /* LoopSupportKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C12ECD05289560B90089EB07 /* LoopSupportKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; platformFilter = ios; };
 		C12ECD06289560B90089EB07 /* LoopSupportKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C14A7E7C295F2EC100CD87B4 /* UsageDataPrivacyPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14A7E7B295F2EC100CD87B4 /* UsageDataPrivacyPreferenceView.swift */; };
+		C15349062960AA9000B47074 /* UsageDataPrivacyPreferenceMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15349052960AA9000B47074 /* UsageDataPrivacyPreferenceMenuItem.swift */; };
+		C1821690297E55A7001EB097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C182168E297E55A7001EB097 /* Localizable.strings */; };
+		C1BE9741295E3800008BA25D /* LoopKitAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE9740295E3800008BA25D /* LoopKitAnalytics.swift */; };
+		C1BE9744295E40B1008BA25D /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = C1BE9743295E40B1008BA25D /* Amplitude */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A936A94025BC9A0C0085119C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A936A90525BC99CB0085119C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A936A93525BC9A0B0085119C;
-			remoteInfo = LoopSupportKit;
-		};
 		A936A95E25BC9A190085119C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A936A90525BC99CB0085119C /* Project object */;
@@ -49,26 +38,12 @@
 			remoteGlobalIDString = A936A95325BC9A190085119C;
 			remoteInfo = LoopSupportKitUI;
 		};
-		A9B3CE0525BCB7D8002D9E92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A936A90525BC99CB0085119C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A936A93525BC9A0B0085119C;
-			remoteInfo = LoopSupportKit;
-		};
 		A9B3CE0725BCB7D8002D9E92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A936A90525BC99CB0085119C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A936A95325BC9A190085119C;
 			remoteInfo = LoopSupportKitUI;
-		};
-		A9CE803825BCAFAB00C04F9B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A936A90525BC99CB0085119C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A936A93525BC9A0B0085119C;
-			remoteInfo = LoopSupportKit;
 		};
 		C12ECD03289560B90089EB07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -93,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C12ECD02289560B90089EB07 /* LoopSupportKit.framework in Embed Frameworks */,
 				C12ECD06289560B90089EB07 /* LoopSupportKitUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -102,11 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A936A93625BC9A0B0085119C /* LoopSupportKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopSupportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A936A93825BC9A0B0085119C /* LoopSupportKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopSupportKit.h; sourceTree = "<group>"; };
-		A936A93925BC9A0B0085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A936A93E25BC9A0C0085119C /* LoopSupportKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopSupportKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A936A94525BC9A0C0085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A936A95425BC9A190085119C /* LoopSupportKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopSupportKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A936A95625BC9A190085119C /* LoopSupportKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopSupportKitUI.h; sourceTree = "<group>"; };
 		A936A95725BC9A190085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,33 +95,41 @@
 		A9CE800225BCAC8700C04F9B /* LoopSupportUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopSupportUI.swift; sourceTree = "<group>"; };
 		A9CE800A25BCACAE00C04F9B /* LoopSupportPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopSupportPlugin.swift; sourceTree = "<group>"; };
 		A9CE801225BCAE4000C04F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C116134F2983096D00777E7C /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C11A2BD129830A3100AC5135 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C122DF0629BBFAAE00321F8D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12BCCFD29BBFA480066A158 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C14A7E7B295F2EC100CD87B4 /* UsageDataPrivacyPreferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageDataPrivacyPreferenceView.swift; sourceTree = "<group>"; };
+		C15349052960AA9000B47074 /* UsageDataPrivacyPreferenceMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageDataPrivacyPreferenceMenuItem.swift; sourceTree = "<group>"; };
+		C155A8F62986396E009BD257 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C160FF6C29BF7D6800D4DFD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C160FF6D29BF7D6900D4DFD4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C16EF1FB298639B800A944BB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C182168F297E55A7001EB097 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C18886EA29830A5E004C982D /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C18B7262299581C600F138D3 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C192C60729C78711001EFEA6 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1AD630429BBFAA80002685D /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1B0CFDD29C786BF0045B04D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1B267A12995824000BCB7C1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1BCB5BE298309C4001C50FF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1BE9740295E3800008BA25D /* LoopKitAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopKitAnalytics.swift; sourceTree = "<group>"; };
+		C1E5A6E129C7870100703C90 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1E693D329C786E200410918 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C1F4FD5C29C7869800D7ACBC /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1FAB5C529C786B000D25073 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1FDCC0D29C786F90056E652 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1FF3D5029C786A900BDC1EC /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A936A93325BC9A0B0085119C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9B3CDD625BCB4B1002D9E92 /* LoopKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A936A93B25BC9A0C0085119C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9B3CDFF25BCB77A002D9E92 /* LoopKit.framework in Frameworks */,
-				A936A93F25BC9A0C0085119C /* LoopSupportKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A95125BC9A190085119C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1BE9744295E40B1008BA25D /* Amplitude in Frameworks */,
 				A9B3CDE125BCB4DE002D9E92 /* LoopKit.framework in Frameworks */,
 				A9B3CDE325BCB4DE002D9E92 /* LoopKitUI.framework in Frameworks */,
-				A9CE803625BCAFAB00C04F9B /* LoopSupportKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12ECD01289560B90089EB07 /* LoopSupportKit.framework in Frameworks */,
 				C12ECD05289560B90089EB07 /* LoopSupportKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,8 +159,6 @@
 			children = (
 				A9CE7D7325BC9B0B00C04F9B /* Common */,
 				A9CE7D7225BC9B0700C04F9B /* Extensions */,
-				A936A93725BC9A0B0085119C /* LoopSupportKit */,
-				A936A94225BC9A0C0085119C /* LoopSupportKitTests */,
 				A936A95525BC9A190085119C /* LoopSupportKitUI */,
 				A936A96025BC9A190085119C /* LoopSupportKitUITests */,
 				A936A97525BC9A230085119C /* LoopSupportPlugin */,
@@ -196,8 +170,6 @@
 		A936A90F25BC99CB0085119C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A936A93625BC9A0B0085119C /* LoopSupportKit.framework */,
-				A936A93E25BC9A0C0085119C /* LoopSupportKitTests.xctest */,
 				A936A95425BC9A190085119C /* LoopSupportKitUI.framework */,
 				A936A95C25BC9A190085119C /* LoopSupportKitUITests.xctest */,
 				A936A97425BC9A230085119C /* LoopSupportPlugin.loopplugin */,
@@ -205,30 +177,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A936A93725BC9A0B0085119C /* LoopSupportKit */ = {
-			isa = PBXGroup;
-			children = (
-				A936A93825BC9A0B0085119C /* LoopSupportKit.h */,
-				A936A93925BC9A0B0085119C /* Info.plist */,
-			);
-			path = LoopSupportKit;
-			sourceTree = "<group>";
-		};
-		A936A94225BC9A0C0085119C /* LoopSupportKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				A936A94525BC9A0C0085119C /* Info.plist */,
-			);
-			path = LoopSupportKitTests;
-			sourceTree = "<group>";
-		};
 		A936A95525BC9A190085119C /* LoopSupportKitUI */ = {
 			isa = PBXGroup;
 			children = (
+				C14A7E7A295F2EA700CD87B4 /* Views */,
 				A936A95625BC9A190085119C /* LoopSupportKitUI.h */,
 				A936A95725BC9A190085119C /* Info.plist */,
+				C182168E297E55A7001EB097 /* Localizable.strings */,
 				A9CE800225BCAC8700C04F9B /* LoopSupportUI.swift */,
 				A9CE801225BCAE4000C04F9B /* Assets.xcassets */,
+				C1BE9740295E3800008BA25D /* LoopKitAnalytics.swift */,
 			);
 			path = LoopSupportKitUI;
 			sourceTree = "<group>";
@@ -280,17 +238,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C14A7E7A295F2EA700CD87B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C14A7E7B295F2EC100CD87B4 /* UsageDataPrivacyPreferenceView.swift */,
+				C15349052960AA9000B47074 /* UsageDataPrivacyPreferenceMenuItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A936A93125BC9A0B0085119C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A936A94625BC9A0C0085119C /* LoopSupportKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A94F25BC9A190085119C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,43 +269,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A936A93525BC9A0B0085119C /* LoopSupportKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A936A94725BC9A0C0085119C /* Build configuration list for PBXNativeTarget "LoopSupportKit" */;
-			buildPhases = (
-				A936A93125BC9A0B0085119C /* Headers */,
-				A936A93225BC9A0B0085119C /* Sources */,
-				A936A93325BC9A0B0085119C /* Frameworks */,
-				A936A93425BC9A0B0085119C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LoopSupportKit;
-			productName = LoopSupportKit;
-			productReference = A936A93625BC9A0B0085119C /* LoopSupportKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A936A93D25BC9A0C0085119C /* LoopSupportKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A936A94A25BC9A0C0085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitTests" */;
-			buildPhases = (
-				A936A93A25BC9A0C0085119C /* Sources */,
-				A936A93B25BC9A0C0085119C /* Frameworks */,
-				A936A93C25BC9A0C0085119C /* Resources */,
-				A9B3CDFD25BCB754002D9E92 /* Copy Frameworks with Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A936A94125BC9A0C0085119C /* PBXTargetDependency */,
-			);
-			name = LoopSupportKitTests;
-			productName = LoopSupportKitTests;
-			productReference = A936A93E25BC9A0C0085119C /* LoopSupportKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A936A95325BC9A190085119C /* LoopSupportKitUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A936A96525BC9A190085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitUI" */;
@@ -359,9 +281,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				A9CE803925BCAFAB00C04F9B /* PBXTargetDependency */,
 			);
 			name = LoopSupportKitUI;
+			packageProductDependencies = (
+				C1BE9743295E40B1008BA25D /* Amplitude */,
+			);
 			productName = LoopSupportKitUI;
 			productReference = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -398,7 +322,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A9B3CE0625BCB7D8002D9E92 /* PBXTargetDependency */,
 				A9B3CE0825BCB7D8002D9E92 /* PBXTargetDependency */,
 				C12ECD04289560B90089EB07 /* PBXTargetDependency */,
 				C12ECD08289560B90089EB07 /* PBXTargetDependency */,
@@ -417,13 +340,6 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					A936A93525BC9A0B0085119C = {
-						CreatedOnToolsVersion = 12.2;
-						LastSwiftMigration = 1220;
-					};
-					A936A93D25BC9A0C0085119C = {
-						CreatedOnToolsVersion = 12.2;
-					};
 					A936A95325BC9A190085119C = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -441,7 +357,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				"zh-Hans",
 				nl,
 				fr,
@@ -451,14 +366,28 @@
 				pl,
 				ru,
 				es,
+				da,
+				tr,
+				cs,
+				ro,
+				Base,
+				fi,
+				he,
+				hi,
+				ja,
+				"pt-BR",
+				sk,
+				sv,
+				vi,
 			);
 			mainGroup = A936A90425BC99CB0085119C;
+			packageReferences = (
+				C1BE9742295E40B1008BA25D /* XCRemoteSwiftPackageReference "Amplitude-iOS" */,
+			);
 			productRefGroup = A936A90F25BC99CB0085119C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A936A93525BC9A0B0085119C /* LoopSupportKit */,
-				A936A93D25BC9A0C0085119C /* LoopSupportKitTests */,
 				A936A95325BC9A190085119C /* LoopSupportKitUI */,
 				A936A95B25BC9A190085119C /* LoopSupportKitUITests */,
 				A936A97325BC9A230085119C /* LoopSupportPlugin */,
@@ -467,25 +396,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A936A93425BC9A0B0085119C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A936A93C25BC9A0C0085119C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A95225BC9A190085119C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9CE801325BCAE4000C04F9B /* Assets.xcassets in Resources */,
+				C1821690297E55A7001EB097 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,26 +422,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A9B3CDFD25BCB754002D9E92 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
 		A9B3CE0425BCB7AB002D9E92 /* Copy Frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,29 +447,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A936A93225BC9A0B0085119C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9CE7DA025BC9C0200C04F9B /* OSLog.swift in Sources */,
-				A9CE7D7E25BC9B3300C04F9B /* LocalizedString.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A936A93A25BC9A0C0085119C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A95025BC9A190085119C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9CE7DA125BC9C0200C04F9B /* OSLog.swift in Sources */,
+				C15349062960AA9000B47074 /* UsageDataPrivacyPreferenceMenuItem.swift in Sources */,
+				C14A7E7C295F2EC100CD87B4 /* UsageDataPrivacyPreferenceView.swift in Sources */,
 				A9CE7D8425BC9B3700C04F9B /* LocalizedString.swift in Sources */,
 				A9CE800325BCAC8700C04F9B /* LoopSupportUI.swift in Sources */,
+				C1BE9741295E3800008BA25D /* LoopKitAnalytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,35 +480,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A936A94125BC9A0C0085119C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
-			targetProxy = A936A94025BC9A0C0085119C /* PBXContainerItemProxy */;
-		};
 		A936A95F25BC9A190085119C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A936A95325BC9A190085119C /* LoopSupportKitUI */;
 			targetProxy = A936A95E25BC9A190085119C /* PBXContainerItemProxy */;
-		};
-		A9B3CE0625BCB7D8002D9E92 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
-			targetProxy = A9B3CE0525BCB7D8002D9E92 /* PBXContainerItemProxy */;
 		};
 		A9B3CE0825BCB7D8002D9E92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A936A95325BC9A190085119C /* LoopSupportKitUI */;
 			targetProxy = A9B3CE0725BCB7D8002D9E92 /* PBXContainerItemProxy */;
 		};
-		A9CE803925BCAFAB00C04F9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
-			targetProxy = A9CE803825BCAFAB00C04F9B /* PBXContainerItemProxy */;
-		};
 		C12ECD04289560B90089EB07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
-			target = A936A93525BC9A0B0085119C /* LoopSupportKit */;
 			targetProxy = C12ECD03289560B90089EB07 /* PBXContainerItemProxy */;
 		};
 		C12ECD08289560B90089EB07 /* PBXTargetDependency */ = {
@@ -635,6 +502,38 @@
 			targetProxy = C12ECD07289560B90089EB07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C182168E297E55A7001EB097 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C182168F297E55A7001EB097 /* es */,
+				C116134F2983096D00777E7C /* nb */,
+				C1BCB5BE298309C4001C50FF /* it */,
+				C11A2BD129830A3100AC5135 /* fr */,
+				C18886EA29830A5E004C982D /* nl */,
+				C155A8F62986396E009BD257 /* de */,
+				C16EF1FB298639B800A944BB /* pl */,
+				C18B7262299581C600F138D3 /* da */,
+				C1B267A12995824000BCB7C1 /* tr */,
+				C12BCCFD29BBFA480066A158 /* cs */,
+				C1AD630429BBFAA80002685D /* ro */,
+				C122DF0629BBFAAE00321F8D /* ru */,
+				C160FF6C29BF7D6800D4DFD4 /* en */,
+				C160FF6D29BF7D6900D4DFD4 /* zh-Hans */,
+				C1F4FD5C29C7869800D7ACBC /* fi */,
+				C1FF3D5029C786A900BDC1EC /* he */,
+				C1FAB5C529C786B000D25073 /* hi */,
+				C1B0CFDD29C786BF0045B04D /* ja */,
+				C1E693D329C786E200410918 /* pt-BR */,
+				C1FDCC0D29C786F90056E652 /* sk */,
+				C1E5A6E129C7870100703C90 /* sv */,
+				C192C60729C78711001EFEA6 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A936A92025BC99CB0085119C /* Debug */ = {
@@ -727,7 +626,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,
@@ -830,7 +729,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,
@@ -846,94 +745,6 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WARNING_CFLAGS = "-Wall";
-			};
-			name = Release;
-		};
-		A936A94825BC9A0C0085119C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoopSupportKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A936A94925BC9A0C0085119C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoopSupportKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A936A94B25BC9A0C0085119C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LoopSupportKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A936A94C25BC9A0C0085119C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LoopSupportKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1093,24 +904,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A936A94725BC9A0C0085119C /* Build configuration list for PBXNativeTarget "LoopSupportKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A936A94825BC9A0C0085119C /* Debug */,
-				A936A94925BC9A0C0085119C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A936A94A25BC9A0C0085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A936A94B25BC9A0C0085119C /* Debug */,
-				A936A94C25BC9A0C0085119C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A936A96525BC9A190085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1139,6 +932,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1BE9742295E40B1008BA25D /* XCRemoteSwiftPackageReference "Amplitude-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/Amplitude-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1BE9743295E40B1008BA25D /* Amplitude */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1BE9742295E40B1008BA25D /* XCRemoteSwiftPackageReference "Amplitude-iOS" */;
+			productName = Amplitude;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A936A90525BC99CB0085119C /* Project object */;
 }
