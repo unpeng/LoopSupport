@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A936A95D25BC9A190085119C /* LoopSupportKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */; };
 		A936A96425BC9A190085119C /* LoopSupportKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A936A95625BC9A190085119C /* LoopSupportKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A936A97825BC9A230085119C /* LoopSupportPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A936A97625BC9A230085119C /* LoopSupportPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9B3CDE125BCB4DE002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDDF25BCB4DE002D9E92 /* LoopKit.framework */; };
 		A9B3CDE325BCB4DE002D9E92 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CDE025BCB4DE002D9E92 /* LoopKitUI.framework */; };
-		A9B3CE0125BCB7A1002D9E92 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CE0025BCB7A1002D9E92 /* LoopKit.framework */; };
-		A9B3CE0325BCB7A1002D9E92 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3CE0225BCB7A1002D9E92 /* LoopKitUI.framework */; };
 		A9CE7D8425BC9B3700C04F9B /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D7D25BC9B3300C04F9B /* LocalizedString.swift */; };
 		A9CE7D8A25BC9B3700C04F9B /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D7D25BC9B3300C04F9B /* LocalizedString.swift */; };
 		A9CE7DA125BC9C0200C04F9B /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE7D9F25BC9C0200C04F9B /* OSLog.swift */; };
@@ -31,13 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A936A95E25BC9A190085119C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A936A90525BC99CB0085119C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A936A95325BC9A190085119C;
-			remoteInfo = LoopSupportKitUI;
-		};
 		A9B3CE0725BCB7D8002D9E92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A936A90525BC99CB0085119C /* Project object */;
@@ -79,8 +69,6 @@
 		A936A95425BC9A190085119C /* LoopSupportKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopSupportKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A936A95625BC9A190085119C /* LoopSupportKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopSupportKitUI.h; sourceTree = "<group>"; };
 		A936A95725BC9A190085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A936A95C25BC9A190085119C /* LoopSupportKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopSupportKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A936A96325BC9A190085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A936A97425BC9A230085119C /* LoopSupportPlugin.loopplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoopSupportPlugin.loopplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A936A97625BC9A230085119C /* LoopSupportPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopSupportPlugin.h; sourceTree = "<group>"; };
 		A936A97725BC9A230085119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,16 +121,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A936A95925BC9A190085119C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9B3CE0125BCB7A1002D9E92 /* LoopKit.framework in Frameworks */,
-				A9B3CE0325BCB7A1002D9E92 /* LoopKitUI.framework in Frameworks */,
-				A936A95D25BC9A190085119C /* LoopSupportKitUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A97125BC9A230085119C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,7 +138,6 @@
 				A9CE7D7325BC9B0B00C04F9B /* Common */,
 				A9CE7D7225BC9B0700C04F9B /* Extensions */,
 				A936A95525BC9A190085119C /* LoopSupportKitUI */,
-				A936A96025BC9A190085119C /* LoopSupportKitUITests */,
 				A936A97525BC9A230085119C /* LoopSupportPlugin */,
 				A936A90F25BC99CB0085119C /* Products */,
 				A9CE803525BCAFAB00C04F9B /* Frameworks */,
@@ -171,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				A936A95425BC9A190085119C /* LoopSupportKitUI.framework */,
-				A936A95C25BC9A190085119C /* LoopSupportKitUITests.xctest */,
 				A936A97425BC9A230085119C /* LoopSupportPlugin.loopplugin */,
 			);
 			name = Products;
@@ -189,14 +165,6 @@
 				C1BE9740295E3800008BA25D /* LoopKitAnalytics.swift */,
 			);
 			path = LoopSupportKitUI;
-			sourceTree = "<group>";
-		};
-		A936A96025BC9A190085119C /* LoopSupportKitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A936A96325BC9A190085119C /* Info.plist */,
-			);
-			path = LoopSupportKitUITests;
 			sourceTree = "<group>";
 		};
 		A936A97525BC9A230085119C /* LoopSupportPlugin */ = {
@@ -290,25 +258,6 @@
 			productReference = A936A95425BC9A190085119C /* LoopSupportKitUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A936A95B25BC9A190085119C /* LoopSupportKitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A936A96825BC9A190085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitUITests" */;
-			buildPhases = (
-				A936A95825BC9A190085119C /* Sources */,
-				A936A95925BC9A190085119C /* Frameworks */,
-				A936A95A25BC9A190085119C /* Resources */,
-				A9B3CE0425BCB7AB002D9E92 /* Copy Frameworks with Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A936A95F25BC9A190085119C /* PBXTargetDependency */,
-			);
-			name = LoopSupportKitUITests;
-			productName = LoopSupportKitUITests;
-			productReference = A936A95C25BC9A190085119C /* LoopSupportKitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A936A97325BC9A230085119C /* LoopSupportPlugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A936A97925BC9A230085119C /* Build configuration list for PBXNativeTarget "LoopSupportPlugin" */;
@@ -341,9 +290,6 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					A936A95325BC9A190085119C = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					A936A95B25BC9A190085119C = {
 						CreatedOnToolsVersion = 12.2;
 					};
 					A936A97325BC9A230085119C = {
@@ -389,7 +335,6 @@
 			projectRoot = "";
 			targets = (
 				A936A95325BC9A190085119C /* LoopSupportKitUI */,
-				A936A95B25BC9A190085119C /* LoopSupportKitUITests */,
 				A936A97325BC9A230085119C /* LoopSupportPlugin */,
 			);
 		};
@@ -405,13 +350,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A936A95A25BC9A190085119C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A936A97225BC9A230085119C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,31 +358,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A9B3CE0425BCB7AB002D9E92 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/LoopKitUI.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKitUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A936A95025BC9A190085119C /* Sources */ = {
@@ -457,13 +370,6 @@
 				A9CE7D8425BC9B3700C04F9B /* LocalizedString.swift in Sources */,
 				A9CE800325BCAC8700C04F9B /* LoopSupportUI.swift in Sources */,
 				C1BE9741295E3800008BA25D /* LoopKitAnalytics.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A936A95825BC9A190085119C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +386,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A936A95F25BC9A190085119C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A936A95325BC9A190085119C /* LoopSupportKitUI */;
-			targetProxy = A936A95E25BC9A190085119C /* PBXContainerItemProxy */;
-		};
 		A9B3CE0825BCB7D8002D9E92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A936A95325BC9A190085119C /* LoopSupportKitUI */;
@@ -804,40 +705,6 @@
 			};
 			name = Release;
 		};
-		A936A96925BC9A190085119C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LoopSupportKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A936A96A25BC9A190085119C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LoopSupportKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LoopSupportKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		A936A97A25BC9A230085119C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -909,15 +776,6 @@
 			buildConfigurations = (
 				A936A96625BC9A190085119C /* Debug */,
 				A936A96725BC9A190085119C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A936A96825BC9A190085119C /* Build configuration list for PBXNativeTarget "LoopSupportKitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A936A96925BC9A190085119C /* Debug */,
-				A936A96A25BC9A190085119C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
