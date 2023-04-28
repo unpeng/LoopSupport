@@ -17,8 +17,10 @@ public final class LoopSupportUI: SupportUI {
 
     private var analytics = LoopKitAnalytics.shared
 
-    public func checkVersion(bundleIdentifier: String, currentVersion: String, completion: @escaping (Result<VersionUpdate?, Error>) -> Void) { }
-        
+    public func checkVersion(bundleIdentifier: String, currentVersion: String) async -> LoopKit.VersionUpdate? {
+        return nil
+    }
+
     public func softwareUpdateView(bundleIdentifier: String, currentVersion: String, guidanceColors: GuidanceColors, openAppStore: (() -> Void)?) -> AnyView? { nil }
     
     public init?(rawState: RawStateValue) {
