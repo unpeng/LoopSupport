@@ -17,19 +17,29 @@ public final class LoopSupportUI: SupportUI {
 
     private var analytics = LoopKitAnalytics.shared
 
-    public func checkVersion(bundleIdentifier: String, currentVersion: String, completion: @escaping (Result<VersionUpdate?, Error>) -> Void) { }
-        
+    public func checkVersion(bundleIdentifier: String, currentVersion: String) async -> LoopKit.VersionUpdate? {
+        return nil
+    }
+
     public func softwareUpdateView(bundleIdentifier: String, currentVersion: String, guidanceColors: GuidanceColors, openAppStore: (() -> Void)?) -> AnyView? { nil }
     
     public init?(rawState: RawStateValue) {
         self.rawState = rawState
     }
+
+    public var loopNeedsReset: Bool = false
     
     public var rawState: RawStateValue
+    
+    public var studyProductSelection: String? = nil
     
     public init() {
         rawState = [:]
     }
+    
+    public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
+    
+    public func resetLoop() {}
 
     public func configurationMenuItems() -> [AnyView] {
         return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
