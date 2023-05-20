@@ -35,10 +35,6 @@ public final class LoopSupportUI: SupportUI {
     
     public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
     
-    public func loopWillReset() {}
-    
-    public func loopDidReset() {}
-
     public func configurationMenuItems() -> [AnyView] {
         return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
     }
