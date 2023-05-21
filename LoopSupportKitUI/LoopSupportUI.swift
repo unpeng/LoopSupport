@@ -26,12 +26,8 @@ public final class LoopSupportUI: SupportUI {
     public init?(rawState: RawStateValue) {
         self.rawState = rawState
     }
-
-    public var loopNeedsReset: Bool = false
     
     public var rawState: RawStateValue
-    
-    public var studyProductSelection: String? = nil
     
     public init() {
         rawState = [:]
@@ -39,12 +35,6 @@ public final class LoopSupportUI: SupportUI {
     
     public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
     
-    public func resetLoop() {}
-
-    public func configurationMenuItems() -> [AnyView] {
-        return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
-    }
-
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
         return AnyView(Button(LocalizedString("Submit Bug Report", comment: "Navigation link title for Submit Bug Report"), action: {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
@@ -53,6 +43,24 @@ public final class LoopSupportUI: SupportUI {
     }
     
     public weak var delegate: SupportUIDelegate?
+
+    public func initializationComplete(for services: [LoopKit.Service]) { }
+
+    public func configurationMenuItems() -> [LoopKitUI.CustomMenuItem] {
+        let view = Button(LocalizedString("Submit Bug Report", comment: "Navigation link title for Submit Bug Report"), action: {
+            let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
+            self.delegate?.openURL(url: url)
+        })
+        return [
+            CustomMenuItem(section: .support, view: AnyView(view)),
+            CustomMenuItem(section: .configuration, view: AnyView(UsageDataPrivacyPreferenceMenuItem())),
+        ]
+    }
+
+    public func loopWillReset() { }
+
+    public func loopDidReset() { }
+
 }
 
 // LoopSupport also provides analytics
