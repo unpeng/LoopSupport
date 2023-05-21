@@ -35,10 +35,6 @@ public final class LoopSupportUI: SupportUI {
     
     public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
     
-    public func configurationMenuItems() -> [AnyView] {
-        return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
-    }
-
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
         return AnyView(Button(LocalizedString("Submit Bug Report", comment: "Navigation link title for Submit Bug Report"), action: {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
@@ -55,7 +51,10 @@ public final class LoopSupportUI: SupportUI {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
             self.delegate?.openURL(url: url)
         })
-        return [CustomMenuItem(section: .support, view: AnyView(view))]
+        return [
+            CustomMenuItem(section: .support, view: AnyView(view)),
+            CustomMenuItem(section: .configuration, view: AnyView(UsageDataPrivacyPreferenceMenuItem())),
+        ]
     }
 
     public func loopWillReset() { }
