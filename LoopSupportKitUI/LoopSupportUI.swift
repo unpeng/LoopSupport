@@ -66,6 +66,7 @@ public final class LoopSupportUI: SupportUI {
 // LoopSupport also provides analytics
 extension LoopSupportUI: AnalyticsService {
 
+
     public static var localizedTitle = LocalizedString("LoopKit Analytics", comment: "Title for LoopKit Analytics")
 
     public func recordAnalyticsEvent(_ name: String, withProperties properties: [AnyHashable : Any]?, outOfSession: Bool) {
@@ -76,6 +77,9 @@ extension LoopSupportUI: AnalyticsService {
         analytics.recordIdentify(property, value: value)
     }
 
+    public func recordIdentify(_ property: String, array: [String]) {
+        analytics.recordIdentify(property, array: array)
+    }
 
     public static var serviceIdentifier = "LoopKitAnalytics"
 
