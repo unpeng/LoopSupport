@@ -75,6 +75,13 @@ public class LoopKitAnalytics {
             client?.identify(AMPIdentify().set(property, value: value as NSString))
         }
     }
+
+    public func recordIdentify(_ property: String, array: [String]) {
+        if usageDataPrivacyPreference == .shareUsageDetailsWithDevelopers {
+            client?.identify(AMPIdentify().set(property, value: array as NSArray))
+        }
+    }
+
 }
 
 extension UserDefaults {

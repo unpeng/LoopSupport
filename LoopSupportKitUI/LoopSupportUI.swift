@@ -35,10 +35,6 @@ public final class LoopSupportUI: SupportUI {
     
     public func getScenarios(from scenarioURLs: [URL]) -> [LoopScenario] { [] }
     
-    public func configurationMenuItems() -> [AnyView] {
-        return [AnyView(UsageDataPrivacyPreferenceMenuItem())]
-    }
-
     public func supportMenuItem(supportInfoProvider: SupportInfoProvider, urlHandler: @escaping (URL) -> Void) -> AnyView? {
         return AnyView(Button(LocalizedString("Submit Bug Report", comment: "Navigation link title for Submit Bug Report"), action: {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
@@ -55,7 +51,10 @@ public final class LoopSupportUI: SupportUI {
             let url = URL(string: "https://github.com/LoopKit/Loop/issues")!
             self.delegate?.openURL(url: url)
         })
-        return [CustomMenuItem(section: .support, view: AnyView(view))]
+        return [
+            CustomMenuItem(section: .support, view: AnyView(view)),
+            CustomMenuItem(section: .configuration, view: AnyView(UsageDataPrivacyPreferenceMenuItem())),
+        ]
     }
 
     public func loopWillReset() { }
@@ -67,6 +66,7 @@ public final class LoopSupportUI: SupportUI {
 // LoopSupport also provides analytics
 extension LoopSupportUI: AnalyticsService {
 
+
     public static var localizedTitle = LocalizedString("LoopKit Analytics", comment: "Title for LoopKit Analytics")
 
     public func recordAnalyticsEvent(_ name: String, withProperties properties: [AnyHashable : Any]?, outOfSession: Bool) {
@@ -77,6 +77,9 @@ extension LoopSupportUI: AnalyticsService {
         analytics.recordIdentify(property, value: value)
     }
 
+    public func recordIdentify(_ property: String, array: [String]) {
+        analytics.recordIdentify(property, array: array)
+    }
 
     public static var serviceIdentifier = "LoopKitAnalytics"
 
